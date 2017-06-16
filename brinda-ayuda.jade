@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+html(lang="es") 
+head
+	meta(charset="UTF-8")
+	title Brinda ayuda
+	meta(name="viewport", content="initial-scale=1, maximum-scale=1")
+	link(rel="stylesheet", href="https://bootswatch.com/paper/bootstrap.min.css")  
+	link(rel="stylesheet", href="css/brinda-ayuda.css")  
+	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css")
+body
+	include header
+
+	main  
+		.container  
+			.blockA
+				.row
+					.col-md-6
+						figure
+							img(src="img/slider-img2.jpg")
+					.col-md-6
+						.description
+							strong Ficha
+							p Pedro Salas
+							p 17 años
+							p Postulante a UTEC con alto desempeño en ajedrez
+			.blockB
+				strong ¿Por qué? necesito tu ayuda?
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem distinctio nisi, quaerat eveniet cupiditate qui accusamus perferendis, rem! Quia cumque totam dolores non iste quisquam repellat assumenda animi saepe.
+
+			.blockC
+				a(href="#") AYÚDALO CON<br> TU TIEMPO
+				.btnYape
+					a(href="#") FINANCIA<br> $U FUTURO
+					figure
+						img(src="img/logoYape.png")
+			.blockExtra
+				.ayudaTiempo
+					h3 AYÚDALO CON TU TIEMPO
+					p Puedes dar MENTORING a Pedro.
+					p Deja tus datos para ser su mentor
+						form.form-horizontal.frmRegistro#FormRegistro
+					form#FormAyudaTiempo			
+						fieldset
+							.form-group
+								label(for="txtEmailAyuda") Email:
+								input(type="email", id="txtEmailAyuda", name="txtEmailAyuda").form-control
+							.form-group
+								label(for="txtCelularAyuda") Celular:
+								input(type="text", id="txtCelularAyuda", data-minlength="9",name="txtCelularAyuda").form-control
+							.form-group
+								label(for="txtDNIAyuda") DNI:
+								input(type="text", id="txtDNIAyuda", data-minlength="8",name="txtDNIAyuda").form-control
+							.form-group
+								input(type="submit",value="Enviar").btn.btn-primary
+				.financiaFuturo
+					h3 FINANCIA FUTURO
+					.description
+						p Pedro ha recibido X donaciones asta el momento
+						p Ha recaudado S/.400.00
+						.bottom
+							figure
+								img(src="img/logoYape.png")
+							.barra
+								p YAPEALE
+								p 987-654-321
+
+
+
+	include footer
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+	script(type="text/javascript" src='js/brinda-ayuda.js')

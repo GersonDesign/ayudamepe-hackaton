@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title Registro
+	meta(name="viewport", content="initial-scale=1, maximum-scale=1")
+	link(rel="stylesheet", href="https://bootswatch.com/paper/bootstrap.min.css")
+	link(rel="stylesheet", href="css/registro.css")
+	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css")
+body
+	.container
+		h2 Formulario
+		form.form-horizontal.frmRegistro#FormRegistro
+			fieldset
+				.form-group
+					label(for="txtNombre") Nombre:
+					input(type="text", id="txtNombre", name="txtNombre").form-control
+				.form-group
+					label(for="txtApellidoPaterno") Apellido Paterno:
+					input(type="text", id="txtApellidoPaterno", name="txtApellidoPaterno").form-control
+				.form-group
+					label(for="txtApellidoMaterno") Apellidos Materno:
+					input(type="text", id="txtApellidoMaterno", name="txtApellidoMaterno").form-control
+				.form-group
+					label(for="txtEdad") Edad:
+					input(type="text", id="txtEdad", name="txtEdad").form-control
+				.form-group
+					label(for="txtDNI") DNI:
+					input(type="text", id="txtDNI", data-minlength="8",name="txtDNI").form-control
+				.form-group
+					label(for="cbxDistrito") Distrito:
+					select.form-control#cbxDistrito
+						option SJL
+				.form-group
+					label(for="txtDireccion") Dirección:
+					input(type="text", id="txtDireccion", name="txtDireccion").form-control
+				.form-group
+					label(for="txtTelefono") Teléfono:
+					input(type="text", id="txtTelefono", data-minlength="9",name="txtTelefono").form-control
+				.form-group
+					label(for="txtEmail") Email:
+					input(type="email", id="txtEmail", name="txtEmail").form-control
+				.form-group
+					label(for="txtCaso") Caso:
+					textarea(type="text", id="txtCaso", name="txtCaso").form-control
+				.form-group
+					input(type="submit",value="Enviar").btn.btn-primary 
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js")
+	script(src="js/registro.js") 
+
+
+	
+
+
+

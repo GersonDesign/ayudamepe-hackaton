@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es"> </html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Brinda ayuda</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+  <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/brinda-ayuda.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <figure><img src="img/logo.jpg" alt="logo de apoyame.pe"/></figure>
+      <nav><a href="registro.html">Registro</a><a href="#">Casos</a><a href="#">¿Cómo ayudar?</a><a href="#">Contacto</a></nav>
+    </div>
+  </header>
+  <main> 
+    <div class="container"> 
+      <div class="blockA">
+        <div class="row">
+          <div class="col-md-6">
+            <figure><img src="img/slider-img2.jpg"/></figure>
+          </div>
+          <div class="col-md-6">
+            <div class="description"><strong>Ficha</strong>
+              <p>Pedro Salas</p>
+              <p>17 años</p>
+              <p>Postulante a UTEC con alto desempeño en ajedrez</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blockB"><strong>¿Por qué? necesito tu ayuda?</strong>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem distinctio nisi, quaerat eveniet cupiditate qui accusamus perferendis, rem! Quia cumque totam dolores non iste quisquam repellat assumenda animi saepe.</p>
+      </div>
+      <div class="blockC"><a href="#">AYÚDALO CON<br> TU TIEMPO</a>
+        <div class="btnYape"><a href="#">FINANCIA<br> $U FUTURO</a>
+          <figure><img src="img/logoYape.png"/></figure>
+        </div>
+      </div>
+      <div class="blockExtra">
+        <div class="ayudaTiempo">
+          <h3>AYÚDALO CON TU TIEMPO</h3>
+          <p>Puedes dar MENTORING a Pedro.</p>
+          <p>Deja tus datos para ser su mentor
+            <form id="FormRegistro" class="form-horizontal frmRegistro"></form>
+          </p>
+          <form id="FormAyudaTiempo">			
+            <fieldset>
+              <div class="form-group">
+                <label for="txtEmailAyuda">Email:</label>
+                <input type="email" id="txtEmailAyuda" name="txtEmailAyuda" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label for="txtCelularAyuda">Celular:</label>
+                <input type="text" id="txtCelularAyuda" data-minlength="9" name="txtCelularAyuda" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label for="txtDNIAyuda">DNI:</label>
+                <input type="text" id="txtDNIAyuda" data-minlength="8" name="txtDNIAyuda" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Enviar" class="btn btn-primary"/>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="financiaFuturo">
+          <h3>FINANCIA FUTURO</h3>
+          <div class="description">
+            <p>Pedro ha recibido X donaciones asta el momento</p>
+            <p>Ha recaudado S/.400.00</p>
+            <div class="bottom">
+              <figure><img src="img/logoYape.png"/></figure>
+              <div class="barra">
+                <p>YAPEALE</p>
+                <p>987-654-321</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Derechos reservados - Apoyame.pe</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/brinda-ayuda.js"></script>
+</body>

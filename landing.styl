@@ -1,0 +1,61 @@
+@import 'nib'
+.link
+	background #5CA1BB
+	color white
+
+header
+	figure
+		img
+			height 200px
+	nav
+		border 3px solid #104F78
+		a
+			color #5CA1BB
+			display block
+			font-weight bold
+			padding 10px 0 
+			text-align center
+
+footer
+	background 
+	color white
+	text-align center
+	
+
+
+@media screen and (max-width: 991px)
+	header
+		figure
+			text-align center
+		nav	
+			margin-top 20px
+			a
+				&:nth-of-type(1)
+				&:nth-of-type(2)
+				&:nth-of-type(3)
+					border-bottom 2px solid #104F78 
+				
+	
+
+
+@media screen and (min-width:992px)
+	header
+		.container
+			align-items center
+			display flex
+			
+			figure
+				width 20%
+			nav
+				display flex
+				justify-content space-around
+				width 80%
+				a
+					width 25%
+					
+					&:nth-of-type(1)
+					&:nth-of-type(2)
+					&:nth-of-type(3)
+						border-right 3px solid #104F78 
+				
+			

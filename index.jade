@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+html(lang="es") 
+head
+	meta(charset="UTF-8")
+	title Home
+	meta(name="viewport", content="initial-scale=1, maximum-scale=1")
+	link(rel="stylesheet", href="https://bootswatch.com/paper/bootstrap.min.css")  
+	link(rel="stylesheet", href="css/index.css")
+body
+	include header
+	main  
+		.container  
+			section.blockA
+				#carousel-example-generic.carousel.slide(data-ride='carousel')
+					ol.carousel-indicators
+						li.active(data-target='#carousel-example-generic', data-slide-to='0')
+						li(data-target='#carousel-example-generic', data-slide-to='1')
+
+					.carousel-inner(role='listbox')
+						.item.active
+							img(src='img/slider-img1.jpg', alt='...')
+						.item
+							img(src="img/slider-img2.jpg", alt='...')
+					a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+						span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+						span.sr-only Previous
+					a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+						span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+						span.sr-only Next
+			section.blockB
+				h3 CASOS
+				.row
+					.col-sm-6.col-md-4
+						.thumbnail
+							img(src="https://lorempixel.com/280/180/" alt="Image Title")
+							.caption 
+								h3 Thumbnail label
+							
+								p
+									a.btn.btn-primary(role="button") ver Detalle
+					.col-sm-6.col-md-4
+						.thumbnail
+							img(src="https://lorempixel.com/280/180/" alt="Image Title")
+							.caption 
+								h3 Thumbnail label
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestias beatae quidem enim mollitia minima ducimus sint veniam blanditiis tempora!
+								p
+									a.btn.btn-primary(role="button") ver Detalle
+					.col-sm-6.col-md-4
+						.thumbnail
+							img(src="https://lorempixel.com/280/180/" alt="Image Title")
+							.caption 
+								h3 Thumbnail label
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestias beatae quidem enim mollitia minima ducimus sint veniam blanditiis tempora!
+								p
+									a.btn.btn-primary(role="button") ver Detalle
+					.col-sm-6.col-md-4
+						.thumbnail
+							img(src="https://lorempixel.com/280/180/" alt="Image Title")
+							.caption 
+								h3 Thumbnail label
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestias beatae quidem enim mollitia minima ducimus sint veniam blanditiis tempora!
+								p
+									a.btn.btn-primary(role="button") ver Detalle
+			.pager
+				ul.pagination.pagination-sm 
+					li.disabled
+						a(href='#') «
+					li.active
+						a(href='#') 1
+					li
+						a(href='#') 2
+					li
+						a(href='#') 3
+					li
+						a(href='#') 4
+					li
+						a(href='#') 5
+					li
+						a(href='#') »
+
+	include footer
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+	script(type="text/javascript" src='js/index.js')
